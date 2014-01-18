@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<manifest>
+         <!-- WIP -->    
+         <!-- WIP -->
+    <!-- DU, Omni, Others replacements -->
+    <!-- Hopefully make some per ROM 'Branches' -->
+  <remove-project name="android_kernel_samsung_aries" path="kernel/samsung/aries" />
+  <remove-project name="proprietary_vendor_samsung" path="vendor/samsung" />
+
+
+    <!-- Add these Local projects -->
+    
+  <remote  name="tr"
+           fetch="https://github.com/TeamRegular"/>
+    
+  <project path="vendor/samsung" name="android_vendor_samsung_fascinatemtd" remote="tr" revision="nexus" />
+    
+    
+         <!-- -->    
+         <!-- -->
+         <!-- Other projects to add as needed per ROM for fascinate-->    
+    
+             <!-- to add .mk, cm.dependencies, and setup files  -->
+     <!--project name="android_device_samsung_fascinatemtd"  path="device/samsung/fascinatemtd" remote="tr" revision="cm-11.0" />  -->
+     <!--project name="android_device_samsung_fascinatemtd"  path="device/samsung/fascinatemtd" remote="du" revision="du44" />  -->
+    
+    
+            <!-- to fix data-wifi handoff?? not needed on DU, PA, CM -->   
+     <!--remove-project name="frameworks_opt_telephony" path="frameworks/opt/telephony"  />  -->
+     <!--project name="android_frameworks_opt_telephony" path="frameworks/opt/telephony" remote="tr" revision="android-4.4" />  -->
+
+            <!-- to add Devil Kernel  -->
+     <!--remove-project name="android_kernel_samsung_aries" path="kernel/samsung/aries" />  -->
+     <!--project name="samsung-kernel-aries" path="kernel/samsung/aries" remote="tr" revision="cm-11.0" />  -->
+
+ 	          <!-- to add aries-common and	fascinatemtd blobs  -->
+     <!--project path="vendor/samsung" name="android_vendor_samsung_fascinatemtd" remote="tr" revision="nexus" />  -->
+    
+    
+   <!--  <remote  name="du"
+           fetch="https://github.com/DirtyUnicorns-KitKat/" 
+           review="gerrit.dirtyunicorns.com" />  -->
+
+   <!--  <remote  name="omnirom"
+           review="gerrit.omnirom.org"
+           fetch="https://github.com/omnirom" />  -->
+    
+    <!-- omni rom = android-4.4
+          VanirAOSP = kk44
+          TeamBaked = kk-4.4
+          DU = du44
+          RemixPA = kk4.4
+         AOSPA-Legacy = kitkat
+         CM = cm-11.0  -->   
+    
+    
+
+</manifest>
