@@ -2,8 +2,8 @@
 <manifest>
          <!-- WIP -->    
          <!-- WIP -->
-  <remove-project name="proprietary_device_samsung" path="vendor/samsung" />
+  <remove-project name="android_kernel_samsung_aries" path="kernel/samsung/aries" />
 
-  <project path="device/samsung" name="android_device_samsung_fascinatemtd" remote="https://github.com/squash-/" revision="cm-11.0" />
+  <project path="kernel/samsung/aries" name="android_kernel_samsung_aries" remote="https://github.com/TeamRegular/" revision="kk-notest" />
   
 </manifest>
