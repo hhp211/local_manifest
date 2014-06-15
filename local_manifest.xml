@@ -6,11 +6,11 @@
     <!-- add github as a remote source -->
  
     <!-- add didhiy kernel by unjust -->
-  #<remove-project name="android_kernel_samsung_aries" path="kernel/samsung/aries" />
+   <!--remove-project name="android_kernel_samsung_aries" path="kernel/samsung/aries" /-->
   <project name="TeamRegular/kernel_samsung_aries" path="kernel/samsung/aries" remote="github" revision="kk-notest" />
 
     <!-- Use Ril from epicmtd -->
-  #<remove-project name="android_device_samsung_fascinatemtd"  path="android/device/samsung/fascinatemtd" />
+  <!--remove-project name="android_device_samsung_fascinatemtd"  path="android/device/samsung/fascinatemtd" /-->
   <project name="TeamRegular/android_device_samsung_fascinatemtd"  path="device/samsung/fascinatemtd" remote="github" revision="cm-11.0" />
 
   
