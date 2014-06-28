@@ -1,17 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <manifest>
-         <!-- WIP -->    
-         <!-- WIP -->
-         
-    <!-- add github as a remote source -->
- 
-    <!-- add didhiy kernel by unjust -->
-   <!--remove-project name="android_kernel_samsung_aries" path="kernel/samsung/aries" /-->
-  <project name="TeamRegular/kernel_samsung_aries" path="kernel/samsung/aries" remote="github" revision="kk-notest" />
 
-    <!-- Use Ril from epicmtd -->
-  <!--remove-project name="android_device_samsung_fascinatemtd"  path="android/device/samsung/fascinatemtd" /-->
-  <project name="TeamRegular/android_device_samsung_fascinatemtd"  path="device/samsung/fascinatemtd" remote="github" revision="cm-11.0" />
+<!-- Personal Fixes to get Data working, hopefully -->
+	<remove-project name="CyanogenMod/android_device_samsung_fascinatemtd" />
+	<path="device/samsung/fascinatemtd" remote="github" revision="cm-11.0" />
+	<project name="squash-/android_device_samsung_fascinatemtd" path="device/samsung/fascinatemtd" remote="github" revision="cm-11.0" />
 
-  
+<!-- CM Removes -->
+	<remove-project name="CyanogenMod/android_packages_apps_Email" />
+	<project path="packages/apps/Email" name="PAC-man/android_packages_apps_Email" remote="github" revision="pac-4.4" />
+	<remove-project name="CyanogenMod/android_packages_apps_UnifiedEmail" />
+	<project path="packages/apps/UnifiedEmail" name="PAC-man/android_packages_apps_UnifiedEmail" remote="github" revision="pac-4.4" />
 </manifest>
