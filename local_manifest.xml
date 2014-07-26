@@ -7,7 +7,7 @@
  
     <!-- add didhiy kernel by unjust -->
    <!--remove-project name="android_kernel_samsung_aries" path="kernel/samsung/aries" /-->
-  <project name="TeamRegular/kernel_samsung_aries" path="kernel/samsung/aries" remote="github" revision="kk-notest" />
+  <project name="TeamRegular/android_kernel_samsung_aries" path="kernel/samsung/aries" remote="github" revision="kk-notest" />
 
     <!-- Use Ril from epicmtd -->
   <!--remove-project name="android_device_samsung_fascinatemtd"  path="android/device/samsung/fascinatemtd" /-->
